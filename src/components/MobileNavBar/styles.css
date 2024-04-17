@@ -1,3 +1,7 @@
+.overflow-body {
+  overflow-y: hidden;
+}
+
 .animationTransform {
   div:nth-child(1) {
     transform: rotate(45deg) translate(3px, 7px);
@@ -6,4 +10,22 @@
   div:nth-child(2) {
     transform: rotate(-45deg) translate(-1px, -5px);
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#menu-mobile-options {
+  animation: fadeIn 0.5s;
+}
+
+#menu-mobile-options.active-menu {
+  display: block;
 }
