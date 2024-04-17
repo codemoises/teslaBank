@@ -8,22 +8,20 @@ export default function MobileNavBar() {
 const [menuOpen, setMenuOpen] = useState(false);
 
 const configureMenu = useCallback(() => {
-  setMenuOpen(true);
+  setMenuOpen((prev) => !prev);
 
-},[]);
+}, []);
 
 useEffect(() => {
 
   if (menuOpen) {
-    // document.getElementById("menu-mobile");
-    document.body.querySelector(".menu-mobile")?.classList.add("animationTransform");
-
-  //   menuMobile.addEventListener("click", function () {
-  //   const menuMobileOptions = document.getElementById("menu-mobile-options");
-  //   menuMobileOptions.classList.toggle("active-menu");
-  //   menuMobile.classList.toggle("animationTransform");
-  //   document.body.classList.toggle("overflow-body");
-  // });
+      document.getElementById("menu-mobile-options")?.classList.toggle("active-menu");
+      document.body.querySelector(".menu-mobile")?.classList.add("animationTransform");
+      document.body.classList.toggle("overflow-body");
+  } else {
+    document.getElementById("menu-mobile-options")?.classList.remove("active-menu");
+    document.body.querySelector(".menu-mobile")?.classList.remove("animationTransform");
+    document.body.classList.remove("overflow-body");
   }
 }, [menuOpen]);
 
@@ -34,8 +32,7 @@ useEffect(() => {
           <Styled.Div></Styled.Div>
           <Styled.Div></Styled.Div>
         </Styled.MenuMobile>
-        {/* <Styled.Nav>
-          <Styled.Ul>
+          <Styled.Ul id="menu-mobile-options">
             <Styled.Li>
               <Styled.Link>
                 Benefícios
@@ -56,8 +53,12 @@ useEffect(() => {
                 Blog
               </Styled.Link>
             </Styled.Li>
+            <Styled.Li>
+              <Styled.Link>
+                Criar sua conta
+              </Styled.Link>
+            </Styled.Li>
           </Styled.Ul>
-        </Styled.Nav> */}
       </Styled.MobileNavBar>
   );
 }

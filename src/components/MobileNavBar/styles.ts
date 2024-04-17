@@ -21,27 +21,33 @@ export const Div = styled.div`
 
 
 export const Ul = styled.ul`
-  display: flex;
-  align-items: center;
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  transition-duration: 5s;
+  background-color: ${({ theme }) => theme.colors.whiteNormal};
 `;
 
 export const Li = styled.li`
   ${({ theme }) => css`
     position: relative;
-    margin-left: ${theme.spacings.gap16};
+    text-align: center;
+    margin: ${theme.spacings.gap40} 0;
     padding: ${theme.spacings.gap8} 0;
-    width: auto;
   `}
 `;
 
 export const Link = styled.a`
   ${({ theme }) => css`
     display: inline-block;
-    padding: ${theme.spacings.gap8} 12px;
-    position: relative;
     color: ${theme.colors.blackNormal};
+    font-size: 2.4rem;
     font-weight: 600;
-    font-size: 1.8rem;
+    padding: ${theme.spacings.gap8} ${theme.spacings.gap24};
 
     &:hover {
       color: ${theme.colors.primaryNormal};
