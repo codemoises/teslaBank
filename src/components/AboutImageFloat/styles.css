@@ -1,0 +1,36 @@
+.float-one {
+  top: -4%;
+  left: 14%;
+}
+
+.float-two {
+  top: 40%;
+  right: 12%;
+}
+
+.float-three {
+  top: 70%;
+  left: 8%;
+}
+
+.icon-one {
+  animation: icon-move 2s ease 2.9s infinite alternate;
+}
+
+.icon-two {
+  animation: icon-move 2s ease 1.9s infinite alternate;
+}
+
+.icon-three {
+  animation: icon-move 2s ease 0.6s infinite alternate;
+}
+
+@keyframes icon-move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
