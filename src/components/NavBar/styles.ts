@@ -51,6 +51,7 @@ export const NavBar = styled.div`
 `;
 
 export const Div = styled.div`
-  display: inline-block;
+  display: flex;
+  gap: 2.5px;
 
 `;
