@@ -45,7 +45,7 @@ export const AboutContentRight = styled.div`
       width: 50vw;
 
       @media screen and (max-width: ${theme.containers.containerXl}) {
-        display: none;
+        width: 100vw;
       }
     `};
 `;
