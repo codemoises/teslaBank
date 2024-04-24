@@ -5,7 +5,9 @@ export type ButtonProps = {
   children: React.ReactNode;
   backgroundColor?: boolean;
   textColor?: boolean;
+  textColorBlack?: boolean;
   hover?: boolean;
+  border?: boolean;
   borderRadius?: boolean;
   height?: string;
   icon?: boolean;
@@ -19,7 +21,9 @@ export default function Button(
     children,
     backgroundColor = true,
     textColor = true,
+    textColorBlack = false,
     hover = false,
+    border = false,
     borderRadius = false,
     height,
     icon = false, src, alt,
@@ -30,8 +34,10 @@ export default function Button(
     <Styled.Button
       backgroundColor={backgroundColor}
       textColor={textColor}
+      textColorBlack={textColorBlack}
       hover={hover}
       height={height}
+      border={border}
       borderRadius={borderRadius}
       icon={icon}
       media={media}

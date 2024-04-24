@@ -2,9 +2,9 @@ import styled, { css } from "styled-components";
 import { ButtonProps } from ".";
 
 export const Button = styled.button<
-  Pick<ButtonProps, 'backgroundColor' | 'textColor' | 'hover' | 'borderRadius' | 'height' | 'icon' | 'media'>
+  Pick<ButtonProps, 'backgroundColor' | 'textColor'| 'textColorBlack' | 'hover' | 'border' | 'borderRadius' | 'height' | 'icon' | 'media'>
 >`
-  ${({ theme, backgroundColor, textColor, hover, borderRadius, height, icon, media }) => css`
+  ${({ theme, backgroundColor, textColor, textColorBlack, hover, border, borderRadius, height, icon, media }) => css`
     display: ${icon ? 'flex' : ''};
     align-items:${icon ? 'center' : ''};
     height: ${height};
@@ -14,10 +14,15 @@ export const Button = styled.button<
     font-size: 1.8rem;
     font-weight: ${icon ? "500" : "600"};
     color: ${textColor ? theme.colors.primaryNormal : theme.colors.whiteNormal};
+    color: ${textColorBlack ? theme.colors.blackNormal : ''};
+    border: ${border ? `3px solid ${theme.colors.whiteDark}` : ''};
     border-radius: ${borderRadius ? '4px' : '0'};
 
     &:hover {
       background-color: ${hover ?  theme.colors.primaryHover : ''};
+      color: ${textColorBlack ? theme.colors.whiteNormal : ''};
+      border: ${border ? '3px solid transparent' : ''};
+      background-color: ${border ? theme.colors.primaryNormal : ''};
     }
 
     &:hover img {
