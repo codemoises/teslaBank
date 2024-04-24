@@ -1,0 +1,18 @@
+.app-teslabank img {
+  animation: imgHeart 2s ease infinite;
+}
+
+
+@keyframes imgHeart {
+  0% {
+    width: 180px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 180px;
+  }
+}
