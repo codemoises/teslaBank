@@ -12,6 +12,10 @@ export const Article = styled.article`
         width: 42px;
       }
     }
+
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      width: 100%;
+    }
   `};
 `;
 
@@ -26,9 +30,6 @@ export const Div = styled.div`
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: ${theme.containers.containerXl}) {
-      width: 100%;
-    }
   `};
 `;
 
