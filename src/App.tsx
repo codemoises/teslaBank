@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Cards from "./components/Cards";
 import Depositions from "./components/Depositions";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Innovation />
       <Depositions />
+      <Cards />
     </>
   );
 }
