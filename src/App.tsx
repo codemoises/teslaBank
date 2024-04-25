@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Blog from "./components/Blog";
 import Cards from "./components/Cards";
 import Depositions from "./components/Depositions";
 import DownloadApp from "./components/DownloadApp";
@@ -16,6 +17,7 @@ function App() {
       <Depositions />
       <Cards />
       <DownloadApp />
+      <Blog />
     </>
   );
 }
