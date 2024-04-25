@@ -30,8 +30,8 @@ export const Button = styled.button<
     }
 
     @media screen and (max-width: ${theme.containers.containerS}) {
-      width: ${media ? '100%' : ''};
-      justify-content: ${media ? 'center' : ''};
+      width: 100%;
+      justify-content: center;
     }
   `}
 `;
