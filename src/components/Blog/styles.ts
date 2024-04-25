@@ -1,10 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Blog = styled.section`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.primaryOpacity};
-  `};
-`;
+export const Blog = styled.section``;
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -14,7 +10,7 @@ export const Container = styled.div`
   `};
 `;
 
-export const TopRow = styled.section`
+export const TopRow = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
