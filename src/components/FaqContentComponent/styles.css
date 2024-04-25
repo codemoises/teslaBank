@@ -1,0 +1,17 @@
+article {
+  width: 100%;
+  cursor: pointer;
+}
+
+article:hover .icon-faq {
+  width: 70px;
+}
+
+article:hover .accordion-img {
+  width: 40px;
+}
+
+.accordion-img {
+  transition: width 0.5s;
+  width: 32px;
+}
