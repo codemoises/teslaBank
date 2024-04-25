@@ -4,6 +4,7 @@ import Cards from "./components/Cards";
 import Depositions from "./components/Depositions";
 import DownloadApp from "./components/DownloadApp";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Innovation from "./components/Innovation";
@@ -20,6 +21,7 @@ function App() {
       <DownloadApp />
       <Blog />
       <Faq />
+      <Footer />
     </>
   );
 }
