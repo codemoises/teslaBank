@@ -11,8 +11,9 @@ export const Link = styled.a`
     &:hover {
       background-color: #252525;
 
-    img {
-      width: 38px;
+      img {
+        width: 38px;
+      }
     }
 
     @media screen and (max-width: ${theme.containers.containerS}) {
