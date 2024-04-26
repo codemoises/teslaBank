@@ -12,7 +12,7 @@ export default function Footer() {
           <Styled.P2>
             Powered by
           </Styled.P2>
-          <Styled.Image src={"/assets/images/logomoises.svg"} alt={"foto moises"} width={"40px"} />
+          <Styled.Image src={"/assets/images/logomoises.svg"} alt={"logo footer"} width={"40px"} />
         </Styled.Div>
       </Styled.Container>
     </Styled.Footer>
