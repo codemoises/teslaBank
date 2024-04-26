@@ -8,8 +8,9 @@ export type FaqContentComponentProps = {
 export default function FaqContentComponent({
   question,
 }: FaqContentComponentProps) {
+
   return (
-    <Styled.FaqContent>
+    <Styled.FaqContent className={"accordion"}>
       <Styled.Article>
         <Styled.Accordion>
           <Styled.ContentLeft>
@@ -34,14 +35,14 @@ export default function FaqContentComponent({
             />
           </div>
         </Styled.Accordion>
-        <Styled.Painel>
+        <Styled.Panel>
           <Styled.P>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Styled.P>
-        </Styled.Painel>
+        </Styled.Panel>
       </Styled.Article>
     </Styled.FaqContent>
   );

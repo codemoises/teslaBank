@@ -59,7 +59,7 @@ export const ImageIconAccordion = styled.img`
   width: 32px;
 `;
 
-export const Painel = styled.div`
+export const Panel = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.gap24} ${theme.spacings.gap16};
     display: none;
