@@ -15,3 +15,31 @@ article:hover .accordion-img {
   transition: width 0.5s;
   width: 32px;
 }
+
+.active .container-img {
+  transform: rotateX(180deg);
+}
+
+.active .accordion-img .icon-faq {
+  width: 70px;
+}
+
+.active2 .container-img {
+  transform: rotateX(180deg);
+}
+
+.active2 .accordion-img .icon-faq {
+  width: 70px;
+}
+
+.active3 .container-img {
+  transform: rotateX(180deg);
+}
+
+.active3 .accordion-img .icon-faq {
+  width: 70px;
+}
+
+.panelHidden {
+  display: block;
+}

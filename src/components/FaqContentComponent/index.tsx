@@ -3,21 +3,27 @@ import "./styles.css";
 
 export type FaqContentComponentProps = {
   question: string;
+  className: string;
+  onclick: () => void;
+  classNamePanel: string;
 };
 
 export default function FaqContentComponent({
   question,
+  className,
+  onclick,
+  classNamePanel,
 }: FaqContentComponentProps) {
 
   return (
-    <Styled.FaqContent className={"accordion"}>
+    <Styled.FaqContent className={className}>
       <Styled.Article>
-        <Styled.Accordion>
+        <Styled.Accordion onClick={onclick}>
           <Styled.ContentLeft>
             <Styled.ImageIconFaq
               src="/assets/icons/smartphone.svg"
               alt="Ícone de celular"
-              className="icon-faq"
+              className={"icon-faq"}
               width={"24px"}
               height={"24px"}
             />
@@ -35,7 +41,7 @@ export default function FaqContentComponent({
             />
           </div>
         </Styled.Accordion>
-        <Styled.Panel>
+        <Styled.Panel className={classNamePanel}>
           <Styled.P>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
