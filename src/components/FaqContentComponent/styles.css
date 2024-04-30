@@ -41,5 +41,5 @@ article:hover .accordion-img {
 }
 
 .panelHidden {
-  display: block;
+  display: block !important;
 }
