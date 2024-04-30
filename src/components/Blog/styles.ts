@@ -11,10 +11,10 @@ export const Container = styled.div`
 `;
 
 export const TopRow = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
 `;
 
 export const H2 = styled.h2`
@@ -29,9 +29,9 @@ export const H2 = styled.h2`
 `;
 
 export const Link = styled.a`
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 `;
 
 export const P = styled.p`
@@ -56,13 +56,13 @@ export const Image = styled.img`
 `;
 
 export const ContainerPost = styled.div`
-    ${({ theme }) => css`
-      display: flex;
-      align-items: stretch;
-      gap: 32px;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
 
-      @media screen and (max-width: ${theme.containers.containerL}) {
-        flex-wrap: wrap;
-      }
-    `};
+    @media screen and (max-width: ${theme.containers.containerL}) {
+      flex-wrap: wrap;
+    }
+  `};
 `;

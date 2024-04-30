@@ -2,7 +2,6 @@
   animation: imgHeart 2s ease infinite;
 }
 
-
 @keyframes imgHeart {
   0% {
     width: 180px;

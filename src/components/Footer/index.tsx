@@ -1,4 +1,4 @@
-import * as Styled from './styles';
+import * as Styled from "./styles";
 
 export default function Footer() {
   return (
@@ -9,10 +9,12 @@ export default function Footer() {
           reservados.
         </Styled.P>
         <Styled.Div>
-          <Styled.P2>
-            Powered by
-          </Styled.P2>
-          <Styled.Image src={"/assets/images/logomoises.svg"} alt={"logo footer"} width={"40px"} />
+          <Styled.P2>Powered by</Styled.P2>
+          <Styled.Image
+            src={"/assets/images/logomoises.svg"}
+            alt={"logo footer"}
+            width={"40px"}
+          />
         </Styled.Div>
       </Styled.Container>
     </Styled.Footer>

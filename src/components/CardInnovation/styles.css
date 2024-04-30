@@ -3,5 +3,7 @@
 }
 
 @media screen and (max-width: 1216px) {
-  .hidden { display: none; }
+  .hidden {
+    display: none;
+  }
 }

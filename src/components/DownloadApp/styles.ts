@@ -21,74 +21,72 @@ export const Container = styled.div`
   `};
 `;
 
-export const ContentLeft = styled.div`
-
-`;
+export const ContentLeft = styled.div``;
 
 export const H3 = styled.h3`
-    ${({ theme }) => css`
-      color: ${theme.colors.blackNormal};
-      line-height: 120%;
-      font-size: 4.8rem;
-      font-weight: 500;
+  ${({ theme }) => css`
+    color: ${theme.colors.blackNormal};
+    line-height: 120%;
+    font-size: 4.8rem;
+    font-weight: 500;
 
-      span {
-        color: ${theme.colors.primaryNormal};
-      }
+    span {
+      color: ${theme.colors.primaryNormal};
+    }
 
-      @media screen and (max-width: ${theme.containers.containerXl}) {
-        font-size: 3.2rem;
-      }
-    `};
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      font-size: 3.2rem;
+    }
+  `};
 `;
 
 export const P = styled.p`
-    ${({ theme }) => css`
-      color: ${theme.colors.blackNormal};
-      margin: ${theme.spacings.gap24} 0 ${theme.spacings.gap56} 0;
-      font-size: 2rem;
-      line-height: 150%;
-      width: 70%;
+  ${({ theme }) => css`
+    color: ${theme.colors.blackNormal};
+    margin: ${theme.spacings.gap24} 0 ${theme.spacings.gap56} 0;
+    font-size: 2rem;
+    line-height: 150%;
+    width: 70%;
 
-      @media screen and (max-width: ${theme.containers.containerXl}) {
-        width: 100%;
-        font-size: 1.8rem;
-      }
-    `};
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  `};
 `;
 
 export const ButtonDownloadsContainer = styled.div`
-    ${({ theme }) => css`
-      display: flex;
-      align-items: center;
-      gap: ${theme.spacings.gap32};
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    gap: ${theme.spacings.gap32};
 
-      @media screen and (max-width: ${theme.containers.containerXl}) {
-        flex-wrap: wrap;
-      }
-    `};
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      flex-wrap: wrap;
+    }
+  `};
 `;
 
 export const ContentRight = styled.div`
-      ${({ theme }) => css`
-      @media screen and (max-width: ${theme.containers.containerXl}) {
-        display: none;
-      }
-      `};
+  ${({ theme }) => css`
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      display: none;
+    }
+  `};
 `;
 
 export const CanvasBasic = styled.div`
   ${({ theme }) => css`
-      width: 380px;
-      height: 380px;
-      border-radius: 56px;
-      background: ${theme.colors.primaryNormal};
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 380px;
+    height: 380px;
+    border-radius: 56px;
+    background: ${theme.colors.primaryNormal};
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `};
 `;
 
 export const Image = styled.img`
-      width: 180px;
+  width: 180px;
 `;

@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Nav = styled.nav`
-
-`;
+export const Nav = styled.nav``;
 
 export const Ul = styled.ul`
   display: flex;
@@ -43,15 +41,14 @@ export const NavBar = styled.div`
     align-items: center;
 
     ${({ theme }) => css`
-    @media screen and (max-width: ${theme.containers.containerL}) {
-      display: none;
-    }
-  `}
+      @media screen and (max-width: ${theme.containers.containerL}) {
+        display: none;
+      }
+    `}
   `}
 `;
 
 export const Div = styled.div`
   display: flex;
   gap: 2.5px;
-
 `;

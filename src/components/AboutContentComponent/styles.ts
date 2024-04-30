@@ -6,8 +6,8 @@ export const Div = styled.div<Pick<AboutContentComponentProps, "border">>`
     display: flex;
     align-items: center;
     padding: ${theme.spacings.gap48} ${theme.spacings.gap0};
-    border-top: ${border ? '1px solid #ffe9ec' : ''};
-    border-bottom: ${border ? '1px solid #ffe9ec' : ''};
+    border-top: ${border ? "1px solid #ffe9ec" : ""};
+    border-bottom: ${border ? "1px solid #ffe9ec" : ""};
   `};
 `;
 

@@ -59,15 +59,15 @@ export const ContainerCards = styled.div`
 `;
 
 export const CardsInnovationGrid = styled.div`
-    ${({ theme }) => css`
-      margin: ${theme.spacings.gap32} 0;
-      display: flex;
-      align-items: stretch;
-      justify-content: space-between;
-      gap: ${theme.spacings.gap24};
+  ${({ theme }) => css`
+    margin: ${theme.spacings.gap32} 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: ${theme.spacings.gap24};
 
-      @media screen and (max-width: ${theme.containers.containerXl}) {
-        flex-wrap: wrap;
-      }
-    `};
+    @media screen and (max-width: ${theme.containers.containerXl}) {
+      flex-wrap: wrap;
+    }
+  `};
 `;

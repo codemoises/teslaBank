@@ -54,7 +54,7 @@ export const P2 = styled.p`
 `;
 
 export const Image = styled.img`
-    ${({ theme }) => css`
-      margin-left: ${theme.spacings.gap16};
-    `};
+  ${({ theme }) => css`
+    margin-left: ${theme.spacings.gap16};
+  `};
 `;

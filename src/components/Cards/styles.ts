@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Cards = styled.section`
-
-`;
+export const Cards = styled.section``;
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -54,7 +52,7 @@ export const P = styled.p`
 `;
 
 export const Image = styled.img`
-    margin: 48px 0;
+  margin: 48px 0;
 `;
 
 export const Div = styled.div`

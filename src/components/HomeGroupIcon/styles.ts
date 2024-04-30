@@ -8,7 +8,6 @@ export const Div = styled.div`
   justify-content: center;
 `;
 
-
 export const Img = styled.img`
   ${({ theme }) => css`
     width: ${theme.spacings.gap32};

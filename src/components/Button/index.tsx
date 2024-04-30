@@ -16,20 +16,20 @@ export type ButtonProps = {
   media?: boolean;
 };
 
-export default function Button(
-  {
-    children,
-    backgroundColor = true,
-    textColor = true,
-    textColorBlack = false,
-    hover = false,
-    border = false,
-    borderRadius = false,
-    height,
-    icon = false, src, alt,
-    media = false
-  }: ButtonProps
-) {
+export default function Button({
+  children,
+  backgroundColor = true,
+  textColor = true,
+  textColorBlack = false,
+  hover = false,
+  border = false,
+  borderRadius = false,
+  height,
+  icon = false,
+  src,
+  alt,
+  media = false,
+}: ButtonProps) {
   return (
     <Styled.Button
       backgroundColor={backgroundColor}
@@ -47,7 +47,7 @@ export default function Button(
         <Styled.Div>
           <Styled.IconButton src={src} alt={alt} />
         </Styled.Div>
-        )}
+      )}
     </Styled.Button>
   );
 }

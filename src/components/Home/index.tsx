@@ -48,7 +48,10 @@ export default function Home() {
           </Styled.ContentLeft>
         </Styled.HomeContentLeft>
         <Styled.HomeContentRight>
-          <Styled.CardImg src="/assets/images/cards.svg" alt="cartão TeslaBank frente" />
+          <Styled.CardImg
+            src="/assets/images/cards.svg"
+            alt="cartão TeslaBank frente"
+          />
         </Styled.HomeContentRight>
       </Styled.Container>
     </Styled.Home>

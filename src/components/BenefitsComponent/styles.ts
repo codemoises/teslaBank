@@ -10,4 +10,4 @@ export const BenefitsContent = styled.div`
 
 export const P = styled.p`
   font-size: 1.8rem;
-`
+`;

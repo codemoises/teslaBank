@@ -1,6 +1,6 @@
 import ButtonDownloadApp from "../ButtonDownloadApp";
 import * as Styled from "./styles";
-import './styles.css';
+import "./styles.css";
 
 export default function DownloadApp() {
   return (
@@ -33,7 +33,12 @@ export default function DownloadApp() {
         </Styled.ContentLeft>
         <Styled.ContentRight>
           <Styled.CanvasBasic className="app-teslabank">
-            <Styled.Image src={"/assets/icons/download-logo.svg"} alt={"Logo da TeslaBank"} width="124px" height="124px" />
+            <Styled.Image
+              src={"/assets/icons/download-logo.svg"}
+              alt={"Logo da TeslaBank"}
+              width="124px"
+              height="124px"
+            />
           </Styled.CanvasBasic>
         </Styled.ContentRight>
       </Styled.Container>

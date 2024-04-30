@@ -14,7 +14,6 @@ export default function FaqContentComponent({
   onclick,
   classNamePanel,
 }: FaqContentComponentProps) {
-
   return (
     <Styled.FaqContent className={className}>
       <Styled.Article>

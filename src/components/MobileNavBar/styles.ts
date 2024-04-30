@@ -19,7 +19,6 @@ export const Div = styled.div`
   `}
 `;
 
-
 export const Ul = styled.ul`
   display: none;
   position: absolute;
@@ -56,9 +55,9 @@ export const Link = styled.a`
 `;
 
 export const MobileNavBar = styled.div`
-    display: none;
+  display: none;
 
-    ${({ theme }) => css`
+  ${({ theme }) => css`
     @media screen and (max-width: ${theme.containers.containerL}) {
       display: inline-block;
       width: 100%;
